@@ -7,3 +7,22 @@
 
 参考了 [ant-pro](https://pro.ant.design/index-cn)
 
+## 命名行
+
+    git clone https://github.com/flash-fish/First-umi-app.git 本项目Github地址
+
+    npm install   安装项目依赖
+
+    npm run start   启动项目
+
+    npm run test  代码审查
+
+    npm run lint:es 使用eslint规则审查 .js mock文件
+
+    npm run lint:ts 审查.tsx .ts 结尾命名的文件
+
+    npm run precommit git提交预加载
+
+
+## 
+
