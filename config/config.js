@@ -38,7 +38,9 @@ export default {
     ],
     publicPath: './',
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, '../src'),
+      'utils': path.resolve(__dirname, '../src/utils'),
+      'common': path.resolve(__dirname, '../src/_common')
     },
     // https://github.com/ant-design/ant-design-mobile/blob/master/components/style/themes/default.less
     theme: {

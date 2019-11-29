@@ -48,6 +48,11 @@ export const commonConf = {
   guidanceSrc
 }
 
+export const buryingPoint = {
+  defaultBase: 'https://hm.baidu.com/hm.js?',
+  defaultId: 'ead4cae09156dc28f81cfd2c35a81715'
+}
+
 export const pageInfo = {
   homeInfo: {
     mid_title: '解决方案',

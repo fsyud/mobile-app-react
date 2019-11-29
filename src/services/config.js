@@ -1,7 +1,7 @@
 import request from '@/utils/request';
 
-// /pm/2019/product_data  线上环境地址
-// 生产环境 /api
+// /pm/2019/  线上环境地址
+// 生产环境 /api/
 
 export async function getCommonJson() {
   return request('/api/product_data/common.json', {

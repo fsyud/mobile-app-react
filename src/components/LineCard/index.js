@@ -8,6 +8,24 @@ const Item = List.Item
 class LineCard extends PureComponent {
   handleClick = (pam) => {
     const { conf } = this.props
+
+    const GlobalHmt = window._hmt ? window._hmt : null
+    
+    // category 要监控的目标的类型名称
+    // action 用户跟目标交互的行为
+    // opt_label 事件的一些额外信息 该项可选 事件的一些数值信息
+    // 比如权重、时长、价格等等，在报表中可以看到其平均值等数据。该项可选
+    // opt_value
+    const hmtConf = [
+      `${conf.anchor === '1' ? '社会' : '校园'}${pam.info}`,
+      '跳转',
+      '导航栏' + pam.info
+    ]
+
+    GlobalHmt.push(['_trackEvent', ...hmtConf])
+
+    console.log(GlobalHmt)
+
     router.push({
       pathname: conf.router,
       query: {
@@ -21,7 +39,6 @@ class LineCard extends PureComponent {
 
   render() {
     const { listInfo} = this.props
-    
     return (
       <div className={styles.contnet_list}>
       {

@@ -12,12 +12,6 @@ const curConfig = {
 }
 
 class School extends PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      curPage: '1'
-    }
-  }
   render() {
     return(
       <div className={styles.school}>

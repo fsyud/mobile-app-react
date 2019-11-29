@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
+import Redirect from 'umi/redirect'
 import { common } from '@/_common/scheme'
 import { confPath } from '@/_common'
+import ToolBar from '@/components/ToolBar'
 import router from 'umi/router'
 import { connect } from 'dva'
 import LazyLoad from 'react-lazy-load'
@@ -31,7 +33,24 @@ class Scheme extends PureComponent {
     let curHash = pam.type === type[0] ? '3' 
       : pam.type === type[1] ? '1' 
       : '2'
+
+    const GlobalHmt = window._hmt ? window._hmt : null
     
+    console.log(GlobalHmt)
+
+    // category 要监控的目标的类型名称
+    // action 用户跟目标交互的行为
+    // opt_label 事件的一些额外信息 该项可选 事件的一些数值信息
+    // 比如权重、时长、价格等等，在报表中可以看到其平均值等数据。该项可选
+    // opt_value
+    const hmtConf = [
+      pam.desc,
+      '跳转',
+      '详情页' + pam.desc
+    ]
+
+    GlobalHmt.push(['_trackEvent', ...hmtConf])
+
     router.push({
       pathname: paramConf.router,
       query: {
@@ -54,7 +73,13 @@ class Scheme extends PureComponent {
       Object.keys(shceConf), parseInt(query.detail)
     ]
 
-    if(keysConf.length === 0) return (<div>loading....</div>)
+    if(keysConf.length === 0) {
+      return (
+        <div>loading...</div>
+      )
+    }
+
+    if(!(shceConf instanceof Object)) return(<Redirect to=""/>)
 
     // parseInt(query.detail)
     const Static = curDetail === 1 ? shceConf[keysConf[0]]
@@ -65,7 +90,6 @@ class Scheme extends PureComponent {
     const lazyImg = list => {
       const ele = list.map(pam => {
         return (
-          
           <div
             key={pam.key}
             className={styles.sche_card}
@@ -87,6 +111,7 @@ class Scheme extends PureComponent {
     const DefaultEle = () => (
       Object.keys(Static).map(item => {
         const singleItem = Static[item]
+        // if(singleItem.conf && !singleItem.conf) return <div></div>
         const ELE =
           <div
             className={styles.sche_item}
@@ -114,6 +139,10 @@ class Scheme extends PureComponent {
           </div>
         </div>
         <div className={styles.sche_bacground}></div>
+        <ToolBar
+          List={common.toolConf.List}
+          styleConf={common.toolConf.style}
+        />
       </div>
     )
   }

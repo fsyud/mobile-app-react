@@ -9,7 +9,9 @@ class devPage extends PureComponent {
     return (
       <div>
         <Result
-          img={myImg('https://gw.alipayobjects.com/zos/rmsportal/HWuSTipkjJRfTWekgTUG.svg')}
+          img={
+            myImg('https://gw.alipayobjects.com/zos/rmsportal/HWuSTipkjJRfTWekgTUG.svg')
+          }
           title="正在开发"
           message="当前页面正在开发过程中..."
         />

@@ -1,5 +1,14 @@
 import styles from './index.less'
 import Redirect from 'umi/redirect'
+import { Burying } from 'utils/tool'
+
+const GetBaidu = props => {
+  let children = props.children
+
+  Burying()
+  console.log('Burying')
+  return children
+}
 
 function BasicLayout(props) {
   // props 路由对象
@@ -21,7 +30,8 @@ function BasicLayout(props) {
 
   return (
     <div className={styles.normal}>
-      {props.children}
+      {/* {props.children} */}
+      {GetBaidu(props)}
     </div>
   )
 }

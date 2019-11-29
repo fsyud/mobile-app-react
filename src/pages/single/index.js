@@ -38,7 +38,7 @@ class Single extends PureComponent {
       if(k !== 'version') endArr.push(midObj[k])
     })
 
-    if(endArr.length !== 3) return (<div>loading....</div>)
+    if(endArr.length !== 3) return ( <div>loading...</div> )
 
     // 合并配置项
     const commonConf = Object.assign(
