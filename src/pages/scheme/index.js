@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import Redirect from 'umi/redirect'
 import { common } from '@/_common/scheme'
 import { confPath } from '@/_common'
+import { trackEvent } from 'utils/tool'
 import ToolBar from '@/components/ToolBar'
 import router from 'umi/router'
 import { connect } from 'dva'
@@ -28,28 +29,21 @@ class Scheme extends PureComponent {
 
   // 跳转函数 配置跳转路由
   goParticul = pam => {
+    console.log(pam)
     const { type } = common
     // 判断当前路由跳转type
     let curHash = pam.type === type[0] ? '3' 
       : pam.type === type[1] ? '1' 
       : '2'
 
-    const GlobalHmt = window._hmt ? window._hmt : null
-    
-    console.log(GlobalHmt)
-
-    // category 要监控的目标的类型名称
-    // action 用户跟目标交互的行为
-    // opt_label 事件的一些额外信息 该项可选 事件的一些数值信息
-    // 比如权重、时长、价格等等，在报表中可以看到其平均值等数据。该项可选
-    // opt_value
     const hmtConf = [
       pam.desc,
       '跳转',
       '详情页' + pam.desc
     ]
 
-    GlobalHmt.push(['_trackEvent', ...hmtConf])
+    // 调用百度点击事件
+    trackEvent(hmtConf)
 
     router.push({
       pathname: paramConf.router,

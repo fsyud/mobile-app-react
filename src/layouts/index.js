@@ -5,8 +5,11 @@ import { Burying } from 'utils/tool'
 const GetBaidu = props => {
   let children = props.children
 
-  Burying()
-  console.log('Burying')
+  const defaultObj = {
+    name: 'index'
+  }
+
+  Burying(defaultObj)
   return children
 }
 

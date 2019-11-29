@@ -1,13 +1,22 @@
 import React, { PureComponent } from 'react'
 import router from 'umi/router';
 import styles from './index.less'
+import { trackEvent } from 'utils/tool'
 import { List, WingBlank, WhiteSpace } from 'antd-mobile';
 import { navList, pageInfo } from '@/_common'
 const Item = List.Item;
 const Brief = Item.Brief;
 
 class Home extends PureComponent {
+
+
   linkDetail = cur => {
+    const hmtConf = [
+      '首页跳转详情页',
+      '跳转',
+      '详情页' + cur
+    ]
+    trackEvent(hmtConf)
     router.push({
       pathname: '/scheme',
       query: {detail: cur}

@@ -46,7 +46,7 @@ export default {
     theme: {
       'brand-primary': theme.primaryColor,
     },
-    // http://mkt.51job.com/pm/2019
+    // http://mkt.51job.com/pm/2019 本地跨域作用
     proxy: {
       "/api": {
         "target": 'http://mkt.51job.com/pm/2019',
