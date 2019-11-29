@@ -34,5 +34,10 @@ https://umijs.org/zh/plugin/umi-plugin-react.html
     该插件的作用是告诉开发工具，如 Webstorm 自动去读取项目根目录下的 .editorconfig 配置文件，如果没有安装这个插件，光有一个配置文件是无法生效的。Webstorm 2017.1 版本之后都是自动安装这个插件的。
 
     如果你的 Webstorm 没有安装这个插件，参阅：Webstorm 安装 Editorconfig 插件。
+## 项目为线上地址
+    使用了百度统计
+
+## 项目中有涉及到数据流
+    使用了 dva 数据流操作
 
 ## 项目为51job所有
