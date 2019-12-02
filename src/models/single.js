@@ -1,11 +1,12 @@
-import { getCommonJson, getSchoolJson, getSocietyJson } from '@/services'
+import { getCommonJson, getSchoolJson, getSocietyJson, getHrefJson } from '@/services'
 
 export default {
   namespace: 'singledata',
   state: {
     common: {},
     school: {},
-    society: {}
+    society: {},
+    hrefList: {}
   },
   effects: {
     *GetCommonList({ payload }, { call, put }) {
@@ -28,6 +29,15 @@ export default {
     },
     *GetSocietyList({ payload }, { call, put }) {
       const response = yield call(getSocietyJson, payload)
+      yield put({
+        type: 'getData',
+        payload: {
+          society: response
+        }
+      })
+    },
+    *GetHrefList({ payload }, { call, put }) {
+      const response = yield call(getHrefJson, payload)
       yield put({
         type: 'getData',
         payload: {

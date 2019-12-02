@@ -92,7 +92,7 @@ export const pageInfo = {
             icon: terrace,
             routers: '/single',
             listName: 'cellphone_conf',
-            href: 'http://mkt.51job.com/pm/intro/plat_onlinesearch_phone/index.html'
+            href: 'cellphone_conf'
           },
           {
             key: '2',
@@ -100,7 +100,7 @@ export const pageInfo = {
             icon: pc_terrace,
             routers: '/single',
             listName: 'pc_conf',
-            href: 'http://mkt.51job.com/pm/intro/plat_onlinesearch_pcnew/'
+            href: 'pc_conf'
           },
           {
             key: '3',
@@ -156,7 +156,7 @@ export const pageInfo = {
             icon: terrace,
             routers: '/single',
             listName: 'cellphone_conf',
-            href: 'http://mkt.51job.com/pm/intro/plat_onlinesearch_phone/index.html'
+            href: 'cellphone_conf'
           },
           {
             key: '2',
@@ -164,7 +164,7 @@ export const pageInfo = {
             icon: pc_terrace,
             routers: '/single',
             listName: 'pc_conf',
-            href: 'http://mkt.51job.com/pm/intro/plat_onlinesearch_pcnew/'
+            href: 'pc_conf'
           }
         ]
       },

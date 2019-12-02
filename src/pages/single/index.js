@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import LazyLoad from 'react-lazy-load';
+import { Toast } from 'antd-mobile';
 import styles from './index.less'
 import { connect } from 'dva' 
 import forIn from 'lodash/forIn'
@@ -22,13 +23,23 @@ class Single extends PureComponent {
       dispatch({
         type: 'singledata/GetSocietyList',
       })
+      // dispatch({
+      //   type: 'singledata/GetHrefList'
+      // })
     }
   }
 
+  loadingToast = () => {
+    Toast.loading('Loading...', 3, () => {
+      console.log('Load complete !!!')
+    });
+  }
+  
+
   render() {
-    const { location, singledata} = this.props
+    const { location, singledata } = this.props
     const { query } = location
-    const { common, school, society } = singledata
+    const { common, school, society} = singledata
     
     const midObj = Object.assign({}, common, school, society)
 
@@ -38,7 +49,11 @@ class Single extends PureComponent {
       if(k !== 'version') endArr.push(midObj[k])
     })
 
-    if(endArr.length !== 3) return ( <div>loading...</div> )
+    const Loading = () => {
+      return <div>loading...</div>
+    }
+
+    if(endArr.length !== 3) return (Loading())
 
     // 合并配置项
     const commonConf = Object.assign(
