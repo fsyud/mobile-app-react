@@ -13,10 +13,10 @@ English | [简体中文](./README-zh_CN.MD)
 [![antd](https://img.shields.io/badge/antd-^3.10.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 
 
-## Project plug-in configuration item reference.
+## :video_game: Project plug-in configuration item reference.
 https://umijs.org/zh/plugin/umi-plugin-react.html
 
-## file catalog.
+## :page_with_curl: file catalog.
 
     |-- config                                # umi Configuration, including routing configuration
     |-- mock                                  # Local analog data
@@ -48,4 +48,4 @@ https://umijs.org/zh/plugin/umi-plugin-react.html
 
     If you don't have this plugin installed for Webstorm, see: install Editorconfig plugin for Webstorm.
 
-## The project is owned by 51job
+## :lollipop: The project is owned by 51job

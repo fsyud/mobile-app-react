@@ -9,14 +9,14 @@
 
 [English](./README.md) | 简体中文
 
-## 项目使用umi +  react + antd-mobile
+## :triangular_flag_on_post: 项目使用umi +  react + antd-mobile
 
 [![antd](https://img.shields.io/badge/antd-^3.10.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 
-## 项目插件配置项参考
+## :video_game: 项目插件配置项参考
 https://umijs.org/zh/plugin/umi-plugin-react.html
 
-## 文件目录
+## :page_with_curl: 文件目录
 
     |-- config                                # umi配置，包含路由配置
     |-- mock                                  # 本地模拟数据
@@ -48,4 +48,4 @@ https://umijs.org/zh/plugin/umi-plugin-react.html
 
     如果你的 Webstorm 没有安装这个插件，参阅：Webstorm 安装 Editorconfig 插件。
 
-## 项目为51job所有
+## :lollipop: 项目为51job所有
