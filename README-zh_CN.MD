@@ -11,7 +11,6 @@
 
 ## :triangular_flag_on_post: 项目使用umi +  react + antd-mobile
 
-[![antd](https://img.shields.io/badge/antd-^3.10.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 
 ## :video_game: 项目插件配置项参考
 https://umijs.org/zh/plugin/umi-plugin-react.html
