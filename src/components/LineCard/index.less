@@ -1,0 +1,55 @@
+@fonts: Arial,Verdana,Sans-serif;
+@commonFonts: 23px;
+@common-shadow: 0 0 16px #EDEDED;
+
+.contnet_list {
+  margin: -65px 30px;
+  :global {
+    .am-list {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: @common-shadow;
+
+      .am-list-header {
+        text-align: left;
+        color: #4b4b4b;
+        font-weight: 600;
+      }
+
+      .am-list-body {
+        border-top: none;
+        border-bottom: none;
+        font-family: @fonts;
+        border-radius: 20px;
+
+        .am-list-item {
+          min-height: 120px;
+
+          .am-list-thumb {
+            width: 62px;
+            height: 62px;
+            
+            img {
+              width: 62px;
+              height: 62px;
+            }
+          }
+
+          .am-list-line {
+            .am-list-content {
+              font-size: @commonFonts;
+            }
+          }
+        }
+
+        .am-list-item:last-child {
+          border-radius: 20px;
+        }
+      }
+    }
+    
+    .am-list:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+}
