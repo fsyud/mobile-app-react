@@ -9,12 +9,14 @@
 
 English | [简体中文](./README-zh_CN.MD)
 
-## Projects using umi +  react + antd-mobile
+## Projects using umi +  react + antd-mobile.
+[![antd](https://img.shields.io/badge/antd-^3.10.0-blue.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 
-## Project plug-in configuration item reference
+
+## Project plug-in configuration item reference.
 https://umijs.org/zh/plugin/umi-plugin-react.html
 
-## file catalog 
+## file catalog.
 
     |-- config                                # umi Configuration, including routing configuration
     |-- mock                                  # Local analog data
