@@ -1,3 +1,8 @@
+<h1 align="center">Umi应用</h1>
+<p align="center">51job的程序执行器</p>
+
+简体中文 | [English](./README-english.MD)
+
 ## 项目使用umi +  react + antd-mobile
 
 ## 项目插件配置项参考
