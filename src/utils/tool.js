@@ -18,6 +18,8 @@ export function Burying (param = {}) {
   hm.src = baiDuStr + curId
   let s = document.getElementsByTagName('script')[0]
   s.parentNode.insertBefore(hm, s)
+
+  _hmt.push(['_trackPageview', param.path])
 }
 
 /**

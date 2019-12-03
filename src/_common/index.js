@@ -91,16 +91,14 @@ export const pageInfo = {
             info: '手机平台',
             icon: terrace,
             routers: '/single',
-            listName: 'cellphone_conf',
-            href: 'cellphone_conf'
+            listName: 'cellphone_conf'
           },
           {
             key: '2',
             info: 'PC平台',
             icon: pc_terrace,
             routers: '/single',
-            listName: 'pc_conf',
-            href: 'pc_conf'
+            listName: 'pc_conf'
           },
           {
             key: '3',
@@ -155,16 +153,14 @@ export const pageInfo = {
             info: '手机平台',
             icon: terrace,
             routers: '/single',
-            listName: 'cellphone_conf',
-            href: 'cellphone_conf'
+            listName: 'cellphone_conf'
           },
           {
             key: '2',
             info: 'PC平台',
             icon: pc_terrace,
             routers: '/single',
-            listName: 'pc_conf',
-            href: 'pc_conf'
+            listName: 'pc_conf'
           }
         ]
       },

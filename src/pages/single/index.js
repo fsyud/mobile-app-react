@@ -23,9 +23,9 @@ class Single extends PureComponent {
       dispatch({
         type: 'singledata/GetSocietyList',
       })
-      // dispatch({
-      //   type: 'singledata/GetHrefList'
-      // })
+      dispatch({
+        type: 'singledata/GetHrefList'
+      })
     }
   }
 
@@ -34,25 +34,33 @@ class Single extends PureComponent {
       console.log('Load complete !!!')
     });
   }
+
+  componentDidCatch(error, info) {
+    console.log(error, info)
+  }
   
 
   render() {
     const { location, singledata } = this.props
     const { query } = location
-    const { common, school, society} = singledata
+    const { common, school, society, hrefList} = singledata
     
     const midObj = Object.assign({}, common, school, society)
 
+    // 定义总列表数组
     let endArr = []
 
+    // 合并所需数组对象
     forIn(midObj, (v, k) => {
       if(k !== 'version') endArr.push(midObj[k])
     })
 
+    // 返回 loading 虚拟 dom
     const Loading = () => {
       return <div>loading...</div>
     }
 
+    // 判断接口请求是否完全
     if(endArr.length !== 3) return (Loading())
 
     // 合并配置项
@@ -66,11 +74,17 @@ class Single extends PureComponent {
       return ( <Redirect to="/devpage" /> )
     }
 
-    // 判断toolbar列表配置项索引
+    // 定义当前 href 全局 value
     let currHref;
 
     // 判断toolbar列表配置项索引
-    if(query.href && query.href.length > 0) currHref = query.href
+    if (query.name && query.name.length > 0) {
+      if (hrefList && hrefList.data && hrefList.data.length > 0) {
+        const curLineData = hrefList.data.filter(s => s.hanger === query.name)
+        currHref = curLineData && curLineData.length > 0 
+          ? curLineData[0].href : ''
+      } else return (Loading())
+    }
 
     // toolbar 索引
     let toolBarList = query.curAnchor === '2' ? schoolTooBar : societyTooBar

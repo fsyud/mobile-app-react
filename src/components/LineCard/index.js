@@ -21,8 +21,7 @@ class LineCard extends PureComponent {
       pathname: conf.router,
       query: {
         curAnchor: conf.anchor,
-        name: pam.listName,
-        href: pam.href
+        name: pam.listName
       }
     })
   } 

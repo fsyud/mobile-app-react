@@ -41,7 +41,7 @@ export default {
       yield put({
         type: 'getData',
         payload: {
-          society: response
+          hrefList: response
         }
       })
     }

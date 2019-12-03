@@ -2,14 +2,16 @@ import styles from './index.less'
 import Redirect from 'umi/redirect'
 import { Burying } from 'utils/tool'
 
-const GetBaidu = props => {
+const GetBaidu = (props, path) => {
   let children = props.children
 
   const defaultObj = {
-    name: 'index'
+    name: 'index',
+    path
   }
 
   Burying(defaultObj)
+
   return children
 }
 
@@ -34,7 +36,7 @@ function BasicLayout(props) {
   return (
     <div className={styles.normal}>
       {/* {props.children} */}
-      {GetBaidu(props)}
+      {GetBaidu(props, _path)}
     </div>
   )
 }

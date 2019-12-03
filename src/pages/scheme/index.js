@@ -29,7 +29,6 @@ class Scheme extends PureComponent {
 
   // 跳转函数 配置跳转路由
   goParticul = pam => {
-    console.log(pam)
     const { type } = common
     // 判断当前路由跳转type
     let curHash = pam.type === type[0] ? '3' 
@@ -49,8 +48,7 @@ class Scheme extends PureComponent {
       pathname: paramConf.router,
       query: {
         curAnchor: curHash,
-        name: pam.listName,
-        href: pam.href
+        name: pam.listName
       }
     })
   }
