@@ -1,43 +1,49 @@
-<h1 align="center">Umi应用</h1>
-<p align="center">51job的程序执行器</p>
+<p align="center">
+  <a href="http://mkt.51job.com/pm/2019/product_case/index.html#/home">
+    <img alt="Umi app" height="655" src="./docs/index.jpg">
+  </a>
+</p>
 
-简体中文 | [English](./README-english.MD)
+<h1 align="center">Umi app</h1>
+<p align="center">A program executor for 51job by react</p>
 
-## 项目使用umi +  react + antd-mobile
+English | [简体中文](./README-zh_CN.MD)
 
-## 项目插件配置项参考
+## Projects using umi +  react + antd-mobile
+
+## Project plug-in configuration item reference
 https://umijs.org/zh/plugin/umi-plugin-react.html
 
-## 文件目录
+## file catalog 
 
-    |-- config                                # umi配置，包含路由配置
-    |-- mock                                  # 本地模拟数据
+    |-- config                                # umi Configuration, including routing configuration
+    |-- mock                                  # Local analog data
     |-- public                                
     |   |-- favicon.png                       # Favicon
-    |   |-- iconfont                          # 字体图标资源
-    |-- src                                   # 开发目录
-    |   |-- assets                            # 本地静态资源
-    |   |-- components                        # 业务组件
-    |   |-- layout                            # 布局组件
-    |   |-- models                            # 全局dva model
-    |   |-- services                          # 接口服务
-    |   |-- pages                             # 页面模板
-    |   |-- tests                             # 单元测试
-    |   |-- global.css                        # 全局css
-    |-- .gitignore                            # git忽略文件
-    |-- .editorconfig                         # 编辑器代码风格配置
-    |-- .eslintignore                         # eslint忽略文件
-    |-- .eslintrc                             # eslint规则
-    |-- .prettierignore                       # 代码风格配置忽略文件
-    |-- .prettierrc                           # 代码风格配置文件
-    |-- .stylelintrc                          # 样式风格配置文件
-    |-- package.json                          # 依赖及配置
-    |-- README.md                             # 简介
+    |   |-- iconfont                          # Font icon resources
+    |-- src                                   # Development directory
+    |   |-- assets                            # Local static resource
+    |   |-- components                        # business component
+    |   |-- layout                            # layout component
+    |   |-- models                            # global dva model
+    |   |-- services                          # interface service
+    |   |-- pages                             # page model
+    |   |-- tests                             # unit testintg
+    |   |-- global.css                        # globalcss
+    |-- .gitignore                            # git ignore files
+    |-- .editorconfig                         # Editor code style configuration
+    |-- .eslintignore                         # eslint ignore files
+    |-- .eslintrc                             # eslint riles
+    |-- .prettierignore                       # Code style configuration ignores files
+    |-- .prettierrc                           # Code style configuration files
+    |-- .stylelintrc                          # Style style configuration file
+    |-- package.json                          # Dependencies and configuration
+    |-- README.md                             # brief introduction
 
     <!-- 注释 -->
-    Editorconfig 插件
-    该插件的作用是告诉开发工具，如 Webstorm 自动去读取项目根目录下的 .editorconfig 配置文件，如果没有安装这个插件，光有一个配置文件是无法生效的。Webstorm 2017.1 版本之后都是自动安装这个插件的。
+    Editorconfig plug-in
+    The purpose of this plug-in is to tell development tools, such as Webstorm, to automatically read the.editorconfig configuration file in the project root directory.The plugin is automatically installed after the Webstorm 2017.1 release.
 
-    如果你的 Webstorm 没有安装这个插件，参阅：Webstorm 安装 Editorconfig 插件。
+    If you don't have this plugin installed for Webstorm, see: install Editorconfig plugin for Webstorm.
 
-## 项目为51job所有
+## The project is owned by 51job
