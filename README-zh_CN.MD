@@ -7,11 +7,11 @@
 <h1 align="center">Umi应用</h1>
 <p align="center">51job的程序执行器</p>
 
-简体中文 | [English](./README.md)
+[English](./README.md) | 简体中文
 
 ## 项目使用umi +  react + antd-mobile
 
-[![antd](https://img.shields.io/badge/antd-^3.10.0-blue.svg?style=flat-square)](https://github.com/ant-design/ant-design)
+[![antd](https://img.shields.io/badge/antd-^3.10.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 
 ## 项目插件配置项参考
 https://umijs.org/zh/plugin/umi-plugin-react.html

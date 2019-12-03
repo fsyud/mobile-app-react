@@ -9,8 +9,8 @@
 
 English | [简体中文](./README-zh_CN.MD)
 
-## Projects using umi +  react + antd-mobile.
-[![antd](https://img.shields.io/badge/antd-^3.10.0-blue.svg?style=flat-square)](https://github.com/ant-design/ant-design)
+## :triangular_flag_on_post: Projects using umi +  react + antd-mobile.
+[![antd](https://img.shields.io/badge/antd-^3.10.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 
 
 ## Project plug-in configuration item reference.
