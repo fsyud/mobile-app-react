@@ -7,7 +7,7 @@
 <h1 align="center">Umi app</h1>
 <p align="center">A program executor for 51job by react</p>
 
-English | [简体中文](./README-zh_CN.md)
+English | [简体中文](./README-zh_CN.MD)
 
 ## :triangular_flag_on_post: Projects using umi +  react + antd-mobile.
 [![antd](https://img.shields.io/badge/antd-^3.10.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)

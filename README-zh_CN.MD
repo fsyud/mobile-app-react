@@ -7,7 +7,7 @@
 <h1 align="center">Umi应用</h1>
 <p align="center">51job的程序执行器</p>
 
-[English](./README.md) | 简体中文
+[English](./README.MD) | 简体中文
 
 ## :triangular_flag_on_post: 项目使用umi +  react + antd-mobile
 
