@@ -200,6 +200,13 @@ export const pageInfo = {
           },
           {
             key: '8',
+            info: '无忧内推PLUS',
+            icon: push_plus,
+            routers: '/single',
+            listName: 'interplus_conf'
+          },
+          {
+            key: '9',
             info: '接口',
             icon: interface_png,
             routers: '/single',
