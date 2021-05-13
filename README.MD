@@ -47,4 +47,3 @@ https://umijs.org/zh/plugin/umi-plugin-react.html
 
     If you don't have this plugin installed for Webstorm, see: install Editorconfig plugin for Webstorm.
 
-## :lollipop: The project is owned by 51job
