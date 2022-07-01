@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">Umi app</h1>
-<p align="center">A program executor for 51job by react</p>
+<p align="center">React-mobile based mobile project</p>
 
 English | [简体中文](./README-zh_CN.MD)
 
